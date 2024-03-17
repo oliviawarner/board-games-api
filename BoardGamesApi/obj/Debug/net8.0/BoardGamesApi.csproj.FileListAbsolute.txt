@@ -33,3 +33,4 @@
 /Users/oliviawarner/board-games-api/BoardGamesApi/obj/Debug/net8.0/BoardGamesApi.pdb
 /Users/oliviawarner/board-games-api/BoardGamesApi/obj/Debug/net8.0/BoardGamesApi.genruntimeconfig.cache
 /Users/oliviawarner/board-games-api/BoardGamesApi/obj/Debug/net8.0/ref/BoardGamesApi.dll
+/Users/oliviawarner/board-games-api/BoardGamesApi/obj/Debug/net8.0/BoardGamesApi.sourcelink.json
