@@ -32,8 +32,7 @@ namespace BoardGamesApi.Controllers
             }
 
             _boardGames.Add(boardGame);
-             //return CreatedAtAction("GetBoardGameById", new { id = boardGame.Id }, boardGame);
-            return Ok();
+            return Ok("Success");
         }
 
         [HttpGet("GetAllBoardGames")]
@@ -41,5 +40,16 @@ namespace BoardGamesApi.Controllers
         {
             return Ok(_boardGames);
         }
+
+        [HttpGet("GetBoardGameById")]
+        public IActionResult GetBoardGameById(Guid Id) 
+        {
+            var boardGame = _boardGames.FirstOrDefault(bg => bg.Id == Id);
+            if (boardGame == null)
+            {
+                return NoContent();
+            }
+            return Ok(boardGame);
+        }      
     }
 }
